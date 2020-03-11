@@ -4,7 +4,7 @@
   "description": "",
   "main": "src/loader.js",
   "scripts": {
-    "production": "pm2 start src/loader.js --name my-money-backend",
+    "start": "pm2 start src/loader.js --name my-money-backend",
     "dev": "nodemon"
   },
   "keywords": [],
