@@ -6,7 +6,7 @@ module.exports = function (server) {
   server.use("/api", router);
 
   const BillingCycle = require("../api/BillingCycle/BillingCycleService");
-  BillingCycle.register(router, "/billingCycles");
+  BillingCycle.register(router, "/BillingCycleService");
   */
 
   /*
@@ -17,7 +17,7 @@ module.exports = function (server) {
 
   protectedApi.use(auth);
 
-  const BillingCycle = require("../api/billingCycle/billingCycleService");
+  const BillingCycle = require("../api/billingCycle/BillingCycleService");
   BillingCycle.register(protectedApi, "/billingCycles");
 
   /*
