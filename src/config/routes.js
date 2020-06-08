@@ -17,7 +17,7 @@ module.exports = function (server) {
 
   protectedApi.use(auth);
 
-  const BillingCycle = require("../api/billingCycle/BillingCycleService");
+  const BillingCycle = require("../api/BillingCycle/BillingCycleService");
   BillingCycle.register(protectedApi, "/billingCycles");
 
   /*
